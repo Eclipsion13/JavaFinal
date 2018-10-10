@@ -70,10 +70,6 @@ public class Chest {
 	}
 	public static void chest10() {
 		System.out.println(10);
-	public static void chestArray() {
-
-
-
 	}
 
 }
