@@ -2,7 +2,9 @@ package infinityDungeon;
 
 public class Chest {
 	
+
 	public static void chestChoice() {
+
 		
 		int rand = (int)(Math.random() * 10 + 1 );
 
@@ -68,6 +70,10 @@ public class Chest {
 	}
 	public static void chest10() {
 		System.out.println(10);
+	public static void chestArray() {
+
+
+
 	}
 
 }
