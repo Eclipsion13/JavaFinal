@@ -5,7 +5,6 @@ public class Chest {
 
 	public static void chestChoice() {
 
-		
 		int rand = (int)(Math.random() * 10 + 1 );
 
 		switch(rand)
