@@ -1,10 +1,18 @@
 package infinityDungeon;
 
-public class Start {
+import javax.swing.*;
+import java.awt.*;
+public class Start extends JFrame 
+{
 
-	public static void dispStart() {
-		// TODO Auto-generated method stub
-// test
+	public static void dispStart() 
+	{
+	
+		private JButton button = new JButton("Go Left")
+
+		
+		
+		
 	}
 
 }
