@@ -42,34 +42,34 @@ public class Chest {
         }
 	}
 	public static void chest1() {
-		System.out.println(1);
+		
 	}
 	public static void chest2() {
-		System.out.println(2);
+		
 	}
 	public static void chest3() {
-		System.out.println(3);
+		
 	}
 	public static void chest4() {
-		System.out.println(4);
+		
 	}
 	public static void chest5() {
-		System.out.println(5);
+		
 	}
 	public static void chest6() {
-		System.out.println(6);
+		
 	}
 	public static void chest7() {
-		System.out.println(7);
+		
 	}
 	public static void chest8() {
-		System.out.println(8);
+		
 	}
 	public static void chest9() {
-		System.out.println(9);
+		
 	}
 	public static void chest10() {
-		System.out.println(10);
+		
 	}
 
 }
