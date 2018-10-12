@@ -30,9 +30,12 @@ public Start()
 		Object source = event.getSource();
 		if(source == Start) {
 			
+			RoomLayout rm = new RoomLayout();
+			rm.setVisible(true);
+			this.dispose();
 		}
 		else
-			setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+			System.exit(0);
 		
 		
 	}
