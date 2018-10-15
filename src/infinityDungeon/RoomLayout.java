@@ -1,6 +1,8 @@
 package infinityDungeon;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 public class RoomLayout extends JFrame
 {
 	private JButton Left = new JButton("Left Door");
@@ -29,6 +31,21 @@ public class RoomLayout extends JFrame
 
 		
 		// Book
+	}
+	public void actionPerformed(ActionEvent event) {
+		Object source = event.getSource();
+		
+		if(source == Left ) 
+		{
+			
+		
+		}
+		else if{
+			
+		}
+		else
+			System.exit(0);
+		
 	}
 
 }
