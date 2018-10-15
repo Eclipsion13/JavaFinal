@@ -3,12 +3,12 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-public class RoomLayout extends JFrame
+public class RoomLayout extends JFrame implements ActionListener
 {
 	private JButton Left = new JButton("Left Door");
 	private JButton Right = new JButton("Right Door");
-	private JButton Up = new JButton("Inventory");
-	private JButton Down = new JButton("Exit");
+	private JButton Inventory = new JButton("Inventory");
+	private JButton Exit = new JButton("Exit");
 	private JButton Chest = new JButton("Open Chest");
 	private Container con = getContentPane();
 	
@@ -17,9 +17,15 @@ public class RoomLayout extends JFrame
 	setLayout(new BorderLayout());
 	con.add(Left, BorderLayout.WEST);
 	con.add(Right, BorderLayout.EAST);
-	con.add(Up, BorderLayout.NORTH);
-	con.add(Down, BorderLayout.SOUTH);
+	con.add(Inventory, BorderLayout.NORTH);
+	con.add(Exit, BorderLayout.SOUTH);
 	con.add(Chest, BorderLayout.CENTER);
+	Left.addActionListener(this);
+	Right.addActionListener(this);
+	Inventory.addActionListener(this);
+	Exit.addActionListener(this);
+	Chest.addActionListener(this);
+	
 	setSize(350, 250);
 	
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -35,14 +41,20 @@ public class RoomLayout extends JFrame
 	public void actionPerformed(ActionEvent event) {
 		Object source = event.getSource();
 		
-		if(source == Left ) 
+		if(source == Left || source == Right ) 
 		{
-			
+			RoomSetup.setup();
 		
 		}
-		else if{
+		else if(source == Inventory) 
+		{
 			
 		}
+		else if(source == Chest) 
+		{
+			
+		}
+		
 		else
 			System.exit(0);
 		
