@@ -19,7 +19,7 @@ public Start()
 	public static void dispStart() 
 	{
 		Start st = new Start();
-		st.setSize(250, 250);
+		st.setSize(350, 250);
 		st.setVisible(true);
 
 		
