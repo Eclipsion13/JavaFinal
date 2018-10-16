@@ -5,7 +5,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 public class RoomLayout extends JFrame implements ActionListener
 {
-	JLabel label = new JLabel("THing");
+	
+	
+	private JButton Encounter = new JButton("Thing");
 	private JButton Left = new JButton("Left Door");
 	private JButton Right = new JButton("Right Door");
 	private JButton Exit = new JButton("Exit");
@@ -16,18 +18,18 @@ public class RoomLayout extends JFrame implements ActionListener
 	{
 	
 	setLayout(new BorderLayout());
-	label.setFont(new Font("Arial", Font.ITALIC,22));
+	con.add(Encounter, BorderLayout.CENTER);
 	con.add(Left, BorderLayout.WEST);
 	con.add(Right, BorderLayout.EAST);
 	con.add(Exit, BorderLayout.SOUTH);
-	con.add(Chest, BorderLayout.CENTER);
+	con.add(Chest, BorderLayout.NORTH);
 	Left.addActionListener(this);
 	Right.addActionListener(this);
 	Exit.addActionListener(this);
 	Chest.addActionListener(this);
 	
 	
-	setSize(350, 250);
+	setSize(800, 450);
 	
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
@@ -37,7 +39,7 @@ public class RoomLayout extends JFrame implements ActionListener
 		rm.setVisible(true);
 
 		
-		// Book
+		
 	}
 	public void actionPerformed(ActionEvent event) {
 		Object source = event.getSource();
@@ -56,5 +58,6 @@ public class RoomLayout extends JFrame implements ActionListener
 			System.exit(0);
 		
 	}
+	
 
 }
