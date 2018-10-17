@@ -7,7 +7,7 @@ public class CommentsForErrorThingie {
 	//to Github before he could push to Github, so I
 	//created this class!
 	//Please do not count this as a class towards the
-	//required number of classes, and please do not
+	//required number of classes, (maybe comments?) and please do not
 	//count this against us either.
 	
 }
