@@ -7,7 +7,8 @@ public class RoomLayout extends JFrame implements ActionListener
 {
 	
 	
-	private JButton Encounter = new JButton("Thing");
+	JLabel label = new JLabel ("Thing Thing Thing Thing Thing\n Thing Thing");
+	Font bigFont = new Font("Arial", Font.BOLD, 30);
 	private JButton Left = new JButton("Left Door");
 	private JButton Right = new JButton("Right Door");
 	private JButton Exit = new JButton("Exit");
@@ -18,7 +19,7 @@ public class RoomLayout extends JFrame implements ActionListener
 	{
 	
 	setLayout(new BorderLayout());
-	con.add(Encounter, BorderLayout.CENTER);
+	add(label);
 	con.add(Left, BorderLayout.WEST);
 	con.add(Right, BorderLayout.EAST);
 	con.add(Exit, BorderLayout.SOUTH);
@@ -29,7 +30,7 @@ public class RoomLayout extends JFrame implements ActionListener
 	Chest.addActionListener(this);
 	
 	
-	setSize(800, 450);
+	setSize(400, 350);
 	
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
