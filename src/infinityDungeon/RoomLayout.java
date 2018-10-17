@@ -47,7 +47,7 @@ public class RoomLayout extends JFrame implements ActionListener
 		
 		if(source == Left || source == Right ) 
 		{
-			RoomSetup.setup();
+			
 		
 		}
 		else if(source == Chest) 
