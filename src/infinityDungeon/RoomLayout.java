@@ -7,7 +7,7 @@ public class RoomLayout extends JFrame implements ActionListener
 {
 	
 	
-	JLabel label = new JLabel ("Thing Thing Thing Thing Thing\n Thing Thing");
+	JLabel label = new JLabel ("Thing ");
 	Font bigFont = new Font("Arial", Font.BOLD, 30);
 	private JButton Left = new JButton("Left Door");
 	private JButton Right = new JButton("Right Door");
