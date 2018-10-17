@@ -29,7 +29,7 @@ public class RoomLayout extends JFrame implements ActionListener
 	Exit.addActionListener(this);
 	Chest.addActionListener(this);
 	
-	
+	//232342434
 	setSize(400, 350);
 	
 	setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
