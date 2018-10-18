@@ -18,7 +18,8 @@ public class RoomLayout extends JFrame implements ActionListener
 	
 	public RoomLayout()
 	{
-	
+	Exit.setBackground(Color.red);
+	Chest.setBackground(Color.ORANGE);
 	setLayout(new BorderLayout());
 	add(label);
 	con.add(Left, BorderLayout.WEST);
@@ -64,6 +65,7 @@ public class RoomLayout extends JFrame implements ActionListener
 			System.exit(0);
 		
 	}
+	
 	
 
 }

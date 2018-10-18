@@ -7,9 +7,12 @@ public class Start extends JFrame implements ActionListener
 {
 private JButton Start = new JButton("Start");
 private JButton Exit = new JButton("Exit");
+Font bigFont = new Font("Arial", Font.BOLD, 30);
 public Start() 
 {
 	setLayout(new BorderLayout());
+	Exit.setBackground(Color.red);
+	Start.setBackground(Color.green);
 	add(Start, BorderLayout.WEST);
 	add(Exit, BorderLayout.EAST);
 	Start.addActionListener(this);
