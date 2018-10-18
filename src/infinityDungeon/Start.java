@@ -20,7 +20,9 @@ public Start()
 	{
 		Start st = new Start();
 		st.setSize(350, 250);
+		st.setLocationRelativeTo(null);
 		st.setVisible(true);
+		
 
 		
 		// Book
@@ -31,6 +33,7 @@ public Start()
 		if(source == Start) {
 			
 			RoomLayout rm = new RoomLayout();
+			rm.setLocationRelativeTo(null);
 			rm.setVisible(true);
 			this.dispose();
 		}
