@@ -7,9 +7,12 @@ public class Start extends JFrame implements ActionListener
 {
 private JButton Start = new JButton("Start");
 private JButton Exit = new JButton("Exit");
+Font bigFont = new Font("Arial", Font.BOLD, 30);
 public Start() 
 {
 	setLayout(new BorderLayout());
+	Exit.setBackground(Color.red);
+	Start.setBackground(Color.green);
 	add(Start, BorderLayout.WEST);
 	add(Exit, BorderLayout.EAST);
 	Start.addActionListener(this);
@@ -20,7 +23,9 @@ public Start()
 	{
 		Start st = new Start();
 		st.setSize(350, 250);
+		st.setLocationRelativeTo(null);
 		st.setVisible(true);
+		
 
 		
 		// Book
@@ -31,6 +36,7 @@ public Start()
 		if(source == Start) {
 			
 			RoomLayout rm = new RoomLayout();
+			rm.setLocationRelativeTo(null);
 			rm.setVisible(true);
 			this.dispose();
 		}
