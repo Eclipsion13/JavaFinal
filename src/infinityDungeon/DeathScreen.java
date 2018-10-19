@@ -10,7 +10,7 @@ public class DeathScreen extends JFrame implements ActionListener
 	
 	
 		
-		JLabel Death = new JLabel ("fhh");
+		JLabel Death = new JLabel ("Death");
 		Font bigFont = new Font("Arial", Font.BOLD, 30);
 		
 	
@@ -18,6 +18,8 @@ public class DeathScreen extends JFrame implements ActionListener
 		public DeathScreen()
 		{
 		setLayout(new BorderLayout());
+		Death.setHorizontalAlignment(JLabel.CENTER);
+	    Death.setVerticalAlignment(JLabel.CENTER);
 		add(Death);
 
 		
