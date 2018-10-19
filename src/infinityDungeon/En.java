@@ -4,9 +4,11 @@ public class En {
 	
 	public static void enChoice() {
 
+		String[] desc = {" strange"," creepy"," wierd-looking"," powerful"," positively"};
 		String en = "";
 		String the = "";
 		int die = 0;
+		int i = (int)(Math.random() * 4 + 1 ) - 1;
 		//Randomly selects an encounter if there is one
 		int rand = (int)(Math.random() * 10 + 1 );
 
@@ -37,7 +39,7 @@ public class En {
             	en8(en, die, the);
             	break;
             case 10:
-            	en9(en, die, the);
+            	en9(en, die, the, i);
             	break;
             default:
             	en0(en, die, the);
@@ -74,15 +76,16 @@ public class En {
 		the = " a";
 	}
 	public static void en7(String en, int die, String the) {
-		en = " ";
-		the = " ";
+		en = " static TV";
+		the = " a";
 	}
 	public static void en8(String en, int die, String the) {
-		en = " ";
-		the = " ";
+		en = " penny";
+		the = " a";
 	}
-	public static void en9(String en, int die, String the) {
-		en = " ";
-		the = " ";
+	public static void en9(String en, int die, String the, int i) {
+		en = " nothing";
+		the = " absolutely";
+		i = 4;
 	}
 }
