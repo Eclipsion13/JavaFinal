@@ -8,7 +8,7 @@ public class RoomLayout extends JFrame implements ActionListener
 	
 	
 	
-	JLabel label = new JLabel ();
+	JLabel label = new JLabel ("thing");
 	Font bigFont = new Font("Arial", Font.BOLD, 30);
 	private JButton Left = new JButton("Left Door");
 	private JButton Right = new JButton("Right Door");
@@ -21,6 +21,8 @@ public class RoomLayout extends JFrame implements ActionListener
 	Exit.setBackground(Color.red);
 	Chest.setBackground(Color.ORANGE);
 	setLayout(new BorderLayout());
+	label.setHorizontalAlignment(JLabel.CENTER);
+    label.setVerticalAlignment(JLabel.CENTER);
 	add(label);
 	con.add(Left, BorderLayout.WEST);
 	con.add(Right, BorderLayout.EAST);
@@ -53,7 +55,7 @@ public class RoomLayout extends JFrame implements ActionListener
 		
 		if(source == Left || source == Right ) 
 		{
-			
+		
 		
 		}
 		else if(source == Chest) 
