@@ -50,7 +50,7 @@ public class En {
 		en = " traps";
 		the = " some";
 		die = 1;
-		String var = "You found" + the + desc + en;
+		String var = "You found" + the + desc + en + " and died";
 		S.op(var);
 		DeathScreen.dispRoom();
 	}
